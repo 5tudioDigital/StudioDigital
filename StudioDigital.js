@@ -98,9 +98,8 @@ function nocookies() {
     GR_cookie || (document.getElementById("GR_Check").checked = !0), 
     
 
-setTimeout(function() {
 alreadyLoaded ? document.getElementById("consentPopup").style.display = "none" : (document.getElementById("consentPopup").style.display = "block") 
-}, 500);
+
 
 Webflow.push(function () {
     var e, t = !1,
