@@ -1,5 +1,4 @@
 var Webflow = Webflow || [];
-
 function getCookie(e) {
     for (var t = e + "=", o = document.cookie.split(";"), c = 0; c < o.length; c++) {
         for (var n = o[c];
