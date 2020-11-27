@@ -40,18 +40,14 @@ document.getElementById("NoCookiesSettings").onclick = function () {
 };
 
 
-var GA_cookie = getCookie("GA_DS"),
-    FB_cookie = getCookie("FB_DS"),
-    HJ_cookie = getCookie("HJ_DS"),
-    GR_cookie = getCookie("GR_DS"),
+var AN_cookie = getCookie("AN_DS"),
+    RE_cookie = getCookie("RE_DS"),
     alreadyLoaded = "true" === window.localStorage.getItem("CB");
 
 
 function checkSettings() {
-    document.getElementById("GA_Check").checked ? setCookie("GA_DS", "true", 999) : setCookie("GA_DS", "false", 999), 
-    document.getElementById("FB_Check").checked ? setCookie("FB_DS", "true", 999) : setCookie("FB_DS", "false", 999), 
-    document.getElementById("HJ_Check").checked ? setCookie("HJ_DS", "true", 999) : setCookie("HJ_DS", "false", 999), 
-    document.getElementById("GR_Check").checked ? setCookie("GR_DS", "true", 999) : setCookie("GR_DS", "false", 999), 
+    document.getElementById("AN_Check").checked ? setCookie("AN_DS", "true", 999) : setCookie("AN_DS", "false", 999), 
+    document.getElementById("GA_Check").checked ? setCookie("RE_DS", "true", 999) : setCookie("RE_DS", "false", 999), 
     location.reload()
 }
 
@@ -69,10 +65,8 @@ function deletecookies() {
 
 function nocookies() {
     deletecookies(), 
-    setCookie("FB_DS", "false", 999), 
-    setCookie("HJ_DS", "false", 999), 
-    setCookie("GA_DS", "false", 999), 
-    setCookie("GR_DS", "false", 999), 
+    setCookie("AN_DS", "false", 999), 
+    setCookie("RE_DS", "false", 999), 
     setCookie("NOCO", "true", 999), 
     window.localStorage.setItem("CB", "true"), 
     location.reload()
@@ -80,22 +74,18 @@ function nocookies() {
 
 
 
-"true" == GA_cookie && (document.getElementById("GA_Check").checked = !0), 
-"true" == FB_cookie && (document.getElementById("FB_Check").checked = !0), 
-"true" == HJ_cookie && (document.getElementById("HJ_Check").checked = !0), 
-"true" == GR_cookie && (document.getElementById("GR_Check").checked = !0), 
+"true" == GA_cookie && (document.getElementById("AN_Check").checked = !0), 
+"true" == FB_cookie && (document.getElementById("RE_Check").checked = !0), 
+
     
     
-"false" == GA_cookie && (document.getElementById("GA_Check").checked = !1), 
-"false" == FB_cookie && (document.getElementById("FB_Check").checked = !1), 
-"false" == HJ_cookie && (document.getElementById("HJ_Check").checked = !1), 
-"false" == GR_cookie && (document.getElementById("GR_Check").checked = !1), 
+"false" == GA_cookie && (document.getElementById("AN_Check").checked = !1), 
+"false" == FB_cookie && (document.getElementById("RE_Check").checked = !1), 
+
 
                                                                                
-    GA_cookie || (document.getElementById("GA_Check").checked = !0), 
-    FB_cookie || (document.getElementById("FB_Check").checked = !0), 
-    HJ_cookie || (document.getElementById("HJ_Check").checked = !0), 
-    GR_cookie || (document.getElementById("GR_Check").checked = !0), 
-    
+    GA_cookie || (document.getElementById("AN_Check").checked = !0), 
+    FB_cookie || (document.getElementById("RE_Check").checked = !0), 
+
 
 alreadyLoaded ? document.getElementById("consentPopup").style.display = "none" : (document.getElementById("consentPopup").style.display = "block") 
