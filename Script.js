@@ -16,21 +16,21 @@ function setCookie(e, t, o) {
         n.setTime(n.getTime() + 24 * o * 60 * 60 * 1e3), c = "; expires=" + n.toUTCString()
     }
     document.cookie = e + "=" + (t || "") + c + "; path=/"
-}
+};
 
     
 document.getElementById("consentBtn").onclick = function () {
     setCookie("CB", "true", 30), checkSettings()
-}, 
+};
     
     
 document.getElementById("DeleteCookies").onclick = function () {
     deletecookies()
-}, 
+};
     
 document.getElementById("NoCookies").onclick = function () {
     nocookies()
-}, 
+}; 
     
 
 
@@ -45,7 +45,7 @@ function checkSettings() {
     document.getElementById("FB_Check").checked ? setCookie("FB_DS", "true", 999) : setCookie("FB_DS", "false", 999), 
     document.getElementById("GR_Check").checked ? setCookie("GR_DS", "true", 999) : setCookie("GR_DS", "false", 999), 
     location.reload()
-}
+};
 
 
 function deletecookies() {
@@ -56,7 +56,7 @@ function deletecookies() {
     setCookie("CB", "false", 30);
     localStorage.clear();
     location.reload();
-}
+};
 
 
 function nocookies() {
@@ -67,7 +67,7 @@ function nocookies() {
     setCookie("NOCO", "true", 30), 
     setCookie("CB", "true", 30)
     location.reload()
-}
+};
 
 
 
