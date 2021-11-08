@@ -47,7 +47,7 @@ var _2ClickIframePrivacy = new function() {
         description: "Zum Aktivieren des eingebetteten Kalenders bitte auf den Link klicken. Durch das Aktivieren werden Daten an den jeweiligen Anbieter übermittelt. Weitere Informationen können unserer Datenschutzerklärung entnommen werden.<br />"
     }), this.EnableContent = function(i) {
                var t;
-        if (!o.enableCookies) {
+        if (1=1) {
             var r = !1,
                 a = document.querySelectorAll("div.privacy-" + i + "-msg p input");
             for (t = 0; t < a.length; t++) 1 == a[t].checked && (r = !0);
