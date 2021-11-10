@@ -46,7 +46,7 @@ var _2ClickIframePrivacy = new function() {
         type: "calendar",
         description: "Zum Aktivieren des eingebetteten Kalenders bitte auf den Link klicken. Durch das Aktivieren werden Daten an den jeweiligen Anbieter übermittelt. Weitere Informationen können unserer Datenschutzerklärung entnommen werden.<br />"
     }), this.EnableContent = function(i) {
-        document.cookie=("_2ClickIPEnable-map=1");
+        document.cookie = `_2ClickIPEnable-map=1; expires=${new Date(new Date().getTime()+1000*60*60*24*365).toGMTString()}; path=/`;
                var t;
         if (o.enableCookies) {
             var r = !1,
