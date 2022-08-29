@@ -38,10 +38,10 @@ var _2ClickIframePrivacy = new function() {
     };
     this.types = new Array({
         type: "video",
-        description: "Zum Aktivieren des Videos bitte auf den Link klicken. Durch das Aktivieren von eingebetteten Videos werden Daten an den jeweiligen Anbieter übermittelt. Weitere Informationen können unserer Datenschutzerklärung entnommen werden.<br />"
+        description: "Zum Aktivieren des Videos bitte auf den Link klicken. Durch das Aktivieren von eingebetteten Videos werden Daten an den Anbieter (Google / YouTube) übermittelt. Weitere Informationen können unserer Datenschutzerklärung entnommen werden.<br />"
     }, {
         type: "map",
-        description: "Zum Aktivieren der eingebetteten Karte bitte auf den Link klicken. Durch das Aktivieren werden Daten an den jeweiligen Anbieter übermittelt. Weitere Informationen können unserer Datenschutzerklärung entnommen werden.<br />"
+        description: "Zum Aktivieren der eingebetteten Karte bitte auf den Link klicken. Durch das Aktivieren werden Daten an den Anbieter (Google / Google Maps) übermittelt. Weitere Informationen können unserer Datenschutzerklärung entnommen werden.<br />"
     }, {
         type: "calendar",
         description: "Zum Aktivieren des eingebetteten Kalenders bitte auf den Link klicken. Durch das Aktivieren werden Daten an den jeweiligen Anbieter übermittelt. Weitere Informationen können unserer Datenschutzerklärung entnommen werden.<br />"
